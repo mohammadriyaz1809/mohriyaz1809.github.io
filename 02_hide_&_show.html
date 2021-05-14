@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 Assignment :</title>
+</head>
+<style>
+    #btn {
+        width: 150px;
+        height: 35px;
+        /* cursor: pointer; */
+        background-color: floralwhite;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 7px;
+    }
+
+    #btn:hover {
+        background-color: chocolate;
+        color: rgb(255, 255, 255);
+    }
+
+    #para {
+        text-align: justify;
+        font-family: cursive;
+        font-weight: lighter;
+    }
+
+    body {
+        background-color: cornsilk;
+    }
+</style>
+
+<body>
+    <h1> Click On Hide and Show button for the result..</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus rem, ducimus impedit hic reprehenderit quod omnis est et error
+        eaque iusto, quo quibusdam architecto possimus unde numquam ipsam tempora
+        dignissimos consequuntur autem cumque?Minima dignissimos temporibus ad
+        beatae accusantium architecto nihil expedita
+        cupiditate eos obcaecati quis suscipit, amet deserunt officia!.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Debitis esse ipsa voluptates facere exercitationem totam sint quis dolor in tempora et ut
+        dignissimos, omnis animi amet asperiores aliquam expedita. <br><br> unde maxime. Quas, eius, sit expedita veniam
+        ea
+        consequatur minus ipsum veritatis, beatae nulla inventore! Porro, explicabo autem. Reiciendis repudiandae ipsa
+        repellendus aperiam, error ipsum eaque laborum hic laudantium, rerum pariatur.Temporibus rem, ducimus impedit
+        hic reprehenderit quod omnis est et error.<br><br>
+        eaque iusto, quo quibusdam architecto possimus unde numquam ipsam tempora
+        dignissimos consequuntur autem cumque?Minima dignissimos temporibus ad
+        beatae accusantium architecto nihil expedita
+        cupiditate eos obcaecati quis suscipit, amet deserunt officia!.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Debitis esse ipsa voluptates facere exercitationem totam sint quis dolor in tempora et ut
+        dignissimos, omnis animi amet asperiores aliquam expedita unde maxime. Quas, eius, sit expedita veniam ea
+        consequatur minus ipsum veritatis, beatae nulla inventore! Porro, explicabo autem. Reiciendis repudiandae ipsa
+        repellendus aperiam, error ipsum eaque laborum hic laudantium, rerum pariatur.
+    </p></BR>
+    <button onclick="dis()" id="btn">Hide and Show</button>
+    <script>
+        function dis() {
+            document.getElementById('btn');
+            document.getElementById('para');
+            if (para.style.display != "none") {
+                para.style.display = "none";
+            }
+            else {
+                para.style.display = "block";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
