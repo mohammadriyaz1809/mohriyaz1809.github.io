@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: rgb(7, 21, 153);
+            margin-top: 80px;
+        }
+        
+        #output {
+            font-family: cursive;
+        }
+        
+        body {
+            background-color: cornsilk;
+        }
+        
+        input {
+            border-radius: 5px;
+            width: 200px;
+            height: 30px;
+            font-weight: bold;
+            font-family: monospace;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        
+        button {
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: arial;
+            width: 12%;
+            padding: 10px;
+            font-size: 15px;
+        }
+        
+        button:hover {
+            background-color: rgb(193, 193, 250);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div align="center"><br><br>
+        <h2>Compare Two number :</h2><br>
+        <input type="text" id="num1" placeholder="Enter First Number">
+        <input type="text" id="num2" placeholder="Enter Second Number"><br><br><br>
+        <button type="button" value="compare()" onclick="compare()"> COMPARE</button>
+        <h2 id="output">OUTPUT WILL SHOW HERE</h2>
+    </div>
+
+</body>
+<script>
+    //comparison between  2  numbers in javascript
+    function compare() {
+        var a = parseFloat(document.getElementById("num1").value);
+        var b = parseFloat(document.getElementById("num2").value);
+
+
+        if (a > b) {
+            document.getElementById("output").innerHTML = `${a} is greater than ${b}`;
+        } else if (a == b) {
+            document.getElementById("output").innerHTML = "Both are equal number ";
+        } else {
+            document.getElementById("output").innerHTML = `${b} is greater than ${a}`;
+        }
+    }
+</script>
+
+</html>
