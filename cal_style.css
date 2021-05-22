@@ -1,0 +1,51 @@
+.calculator {
+    margin-left: 425px;
+}
+
+body {
+    background-color: seashell;
+}
+
+.col {
+    /* for clr */
+    width: 197px;
+}
+
+.t1 {
+    /* apply to table body */
+    width: 275px;
+    margin: 1px;
+    text-align: center;
+    font-size: 21px;
+    background-color: thistle;
+}
+
+#ho {
+    background-color: azure;
+    color: black;
+}
+
+#ho:hover {
+    background-color: rgb(255, 142, 67);
+    color: rgb(17, 16, 16);
+}
+
+input,
+button {
+    padding: 10px 45px;
+    border: solid;
+    font-family: monospace;
+    font-size: 28px;
+    background-color: #f9e9e9;
+    color: black;
+    cursor: pointer;
+    width: 0px;
+}
+
+.arthmatic_oprtr {
+    /* for optr */
+    text-align: justify;
+    color: white;
+    background: #341c7b;
+    border-color: black
+}

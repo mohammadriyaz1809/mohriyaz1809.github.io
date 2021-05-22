@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="cal_style.css">
+    <script src="calc_java.js"></script>
+</head>
+
+<body>
+
+    <h1 align="center"> Calculator By using JavaScript :</h1>
+
+    <div class="calculator">
+        <form action="">
+            <input type="text" id="txtfld" placeholder="0" style=" width: 318px; height: 63px; margin-bottom: 0px;
+             text-align: end; font-family: cursive; font-size: 34px;
+            color: #094ce4; background: azure;"><br>
+            <table class="t1" border="2">
+                <tr>
+                    <td colspan="2"><input type="button" value="C" onclick="clr()" class="col" /></td>
+                    <td><input type="button" value="%" onclick="show('%')" class="arthmatic_oprtr"></td>
+                    <td><input type="button" value="/" onclick="show('/')" class="arthmatic_oprtr"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="1" onclick="show('1')"></td>
+                    <td><input type="button" value="2" onclick="show('2')"></td>
+                    <td><input type="button" value="3" onclick="show('3')"></td>
+                    <td><input type="button" value="*" onclick="show('*')" class="arthmatic_oprtr"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="show('4')"></td>
+                    <td><input type="button" value="5" onclick="show('5')"></td>
+                    <td><input type="button" value="6" onclick="show('6')"></td>
+                    <td><input type="button" value="-" onclick="show('-')" class="arthmatic_oprtr"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="show('7')"></td>
+                    <td><input type="button" value="8" onclick="show('8')"></td>
+                    <td><input type="button" value="9" onclick="show('9')"></td>
+                    <td><input type="button" value="+" onclick="show('+')" class="arthmatic_oprtr"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="0" class="col" onclick="show('0')"></td>
+                    <td><input type="button" value="." onclick="show('.')"></td>
+                    <td><input type="button" value="=  " onclick="sol()" id="ho">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
